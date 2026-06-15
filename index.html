@@ -8,14 +8,27 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+/* =========================================================
+   VLASTNÍ FONT BENEDICT (volitelné):
+   Benedict není na Google Fonts. Pokud máš jeho soubor (.woff2/.otf/.ttf),
+   nahraj ho do repozitáře (např. do složky "fonts/") a odkomentuj blok níže.
+   Web pak Benedict použije automaticky místo náhrady Allura.
+   ---------------------------------------------------------
+   @font-face{
+     font-family:'Benedict';
+     src:url('fonts/Benedict.woff2') format('woff2'),
+         url('fonts/Benedict.otf') format('opentype');
+     font-display:swap;
+   }
+   ========================================================= */
 :root{
   --barva-akcent:#a8896c; --barva-tmava:#3e3a36; --barva-svetla:#faf7f2;
   --barva-bila:#ffffff; --barva-seda:#7d776f;
-  --pismo-nadpis:'Cormorant Garamond', serif;
-  --pismo-ozdobne:'Great Vibes', cursive;
+  --pismo-nadpis:'Cinzel', serif;
+  --pismo-ozdobne:'Benedict', 'Allura', cursive;
   --pismo-text:'Montserrat', sans-serif;
 }
 *{ margin:0; padding:0; box-sizing:border-box; }
